@@ -53,4 +53,4 @@ if [ -e $DATA_BKP_PATH/$DATE_TWO_WEEKS_AGO ]; then
 fi >> $LOG_FILE
 
 # Send an email once the backup is done.
-mailx -s "Confluence & Jira Backup Status on `hostname -A` | $DATE_TODAY" cloudsupport@talentica.com < $LOG_FILE
+mailx -s "Confluence & Jira Backup Status on `hostname -A` | $DATE_TODAY" <email_id> < $LOG_FILE
